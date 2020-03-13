@@ -20,7 +20,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   #
   #   "/images/fallback/" + [version_name, "default.png"].compact.join('_')
   # end
-  process resize_to_fit: [100, 100]  // この記述は追記
+  process resize_to_fit: [100, 100]  
   # Process files as they are uploaded:
   # process scale: [200, 300]
   #
@@ -40,7 +40,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   # end
 
   # Override the filename of the uploaded files:
-  # Avoid using model.id or version_name here, see uploader/store.rb for details.
+  
   # def filename
   #   "something.jpg" if original_filename
   # end
